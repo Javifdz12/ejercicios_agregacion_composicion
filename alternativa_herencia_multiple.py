@@ -1,4 +1,5 @@
-"""class interfaz_cristal:
+"""primera forma:
+class interfaz_cristal:
   def __init__(self,ventanas=[],paredcortina=[]):
     self.ventanas=ventanas
     self.paredcortina=paredcortina
@@ -10,8 +11,8 @@
       list.append(self.ventanas[i].superficie)
     for j in range(0,len(self.paredcortina)):
       list.append(self.paredcortina[j].superficie)
-    return sum(list)"""
-
+    return sum(list)
+    segunda forma:"""
 class interfaz_cristal2:
   def __init__(self,cristal,superficie):
     self.cristal = cristal
@@ -69,11 +70,12 @@ ventana_oeste = Ventana(pared_oeste,"Persiana")
 ventana_este = Ventana(pared_este,"Persiana") 
 
 
-"""casa = Casa(ventana_norte, ventana_oeste, pared_sur, ventana_este) 
+"""primera forma:
+casa = Casa(ventana_norte, ventana_oeste, pared_sur, ventana_este) 
 print(casa.superficie_acristalada()) 
 
 cristal=interfaz_cristal([ventana_norte,ventana_oeste,ventana_este],[pared_sur])
-print(cristal.superficie())"""
-
+print(cristal.superficie())
+segunda forma:"""
 casa2=Casa(interfaz_cristal2(ventana_norte,2),interfaz_cristal2(ventana_este,3.5),interfaz_cristal2(ventana_oeste,2),interfaz_cristal2(pared_sur,2))
 print(casa2.superficie_acristalada())
