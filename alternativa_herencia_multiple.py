@@ -26,7 +26,7 @@ class ParedCortina:
 
 
 class Pared:
-    
+
   def __init__(self, orientacion,):
     self.orientacion = orientacion
 
@@ -38,7 +38,7 @@ class Ventana:
     self.orientacion = objeto_pared.orientacion
     #self.superficie = superficie
     self.proteccion = proteccion
-    
+
     if(proteccion!="Persiana" and proteccion!="Estor"):
       raise Exception("Protección obligatoria ")
 
@@ -53,16 +53,16 @@ class Casa:
 
   def superficie_acristalada(self):
     return (self.norte + self.oeste + self.sur + self.este)
-    
 
 
 
 
 
-pared_norte = Pared("NORTE") 
-pared_oeste = Pared("OESTE") 
-pared_sur = ParedCortina("SUR") 
-pared_este = Pared("ESTE") 
+
+pared_norte = Pared("NORTE")
+pared_oeste = Pared("OESTE")
+pared_sur = ParedCortina("SUR")
+pared_este = Pared("ESTE")
 
 
 ventana_norte = Ventana(pared_norte,"Persiana") 
@@ -70,10 +70,10 @@ ventana_oeste = Ventana(pared_oeste,"Persiana")
 ventana_este = Ventana(pared_este,"Persiana") 
 
 
-"""primera forma:
+"""
 casa = Casa(ventana_norte, ventana_oeste, pared_sur, ventana_este) 
 print(casa.superficie_acristalada()) 
-
+primera forma:
 cristal=interfaz_cristal([ventana_norte,ventana_oeste,ventana_este],[pared_sur])
 print(cristal.superficie())
 segunda forma:"""
