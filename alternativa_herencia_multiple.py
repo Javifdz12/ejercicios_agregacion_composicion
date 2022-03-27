@@ -75,5 +75,5 @@ print(casa.superficie_acristalada())
 cristal=interfaz_cristal([ventana_norte,ventana_oeste,ventana_este],[pared_sur])
 print(cristal.superficie())"""
 
-casa2=Casa(interfaz_cristal2(ventana_norte,2),interfaz_cristal2(ventana_este,3),interfaz_cristal2(ventana_oeste,2),interfaz_cristal2(pared_sur,2))
+casa2=Casa(interfaz_cristal2(ventana_norte,2),interfaz_cristal2(ventana_este,3.5),interfaz_cristal2(ventana_oeste,2),interfaz_cristal2(pared_sur,2))
 print(casa2.superficie_acristalada())

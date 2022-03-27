@@ -12,7 +12,7 @@ print(yang)
 print(yang is yin.yang) 
 #del (yin)
 del (yang)
-print("?") 
+print("?")
 
-#sin añadir del(yin), yang destruido se ejecuta despues d "?" ya que al igualar yin.yang a yang yin........
-#añadiendo del(yin) yin... y por tanto yang destruido se ejecuta antes que "?"
+#sin añadir del(yin), yang destruido se ejecuta despues d "?" ya que al igualar yin.yang a yang,yang se asocia con la instancia yin
+#añadiendo del(yin) tambien eliminas yin y por tanto yang destruido se ejecuta antes que "?"
