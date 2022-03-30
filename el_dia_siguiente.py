@@ -58,13 +58,14 @@ edificio_a=edificio("A",empleado("martin"))
 edificio_b=edificio("B",empleado("salim"))
 los_angeles=ciudad("los_angeles",[edificio_c])
 new_york=ciudad("new_york",[edificio_a,edificio_b])
-empresa1=empresa("yoohoo",[edificio("A",empleado("martin")),edificio("B",empleado("salim")),edificio_c])
+empresa1=empresa("yoohoo",[edificio_a,edificio_b,edificio_c])
 
-edificio_c.destruir(empresa1,los_angeles)
-edificio_b.destruir(empresa1,new_york)
+#edificio_c.destruir(empresa1,los_angeles)
+#edificio_b.destruir(empresa1,new_york)
 new_york.destruir(empresa1)
 los_angeles.numero_edificios()
 
 #me da problemas como que nontype object is not suscriptable o iterable y si quito los if compo utilizo remove para eliminar elementos de la lista
-#si hay algun elemento que no esta en la lista me lanza la excepcion de x not in list
+#si hay algun elemento que no esta en la lista me lanza la excepcion de x not in list. Tambien me sale que nontype no utiliza len() pero eso depende porque a veces no me da ningun problema
+#si no que el probelma que me da es el anterior mencionado.
 #no se como arreglar esos problemas
