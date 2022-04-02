@@ -1,10 +1,14 @@
-from clases.inmortal import *
+from clases.inmortal import Yin,Yang
 from clases.alternativa_herencia_multiple import Pared,Ventana,ParedCortina,interfaz_cristal2,Casa
 
+
 if __name__ == '__main__':
+    yin=Yin()
+    yang=Yang()
+    yin.yang=yang
     print(yang)
     print(yang is yin.yang)
-if __name__ == '__main__':
+
     pared_norte = Pared("NORTE")
     pared_oeste = Pared("OESTE")
     pared_sur = ParedCortina("SUR")
